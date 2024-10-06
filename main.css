@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+/* Basic styling for the assignment */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.container {
+  display: flex;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.word-columns {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-right: 2px solid #ddd;
+}
+.word-column {
+  display: flex;
+  margin-bottom: 5px;
+}
+.word-column div {
+  flex: 1;
+  background-color: #ffd700;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+.word-column div:hover {
+  transform: scale(1.05); /* Slightly enlarge the element */
+}
+.word-column div:nth-child(1) {
+  background-color: #ff6347; /* Red */
+}
+.word-column div:nth-child(2) {
+  background-color: #00ced1; /* Blue */
+}
+.word-column div:nth-child(3) {
+  background-color: #32cd32; /* Green */
+}
+.word-column div:nth-child(4) {
+  background-color: #ffa500; /* Orange */
+}
+.word-column div:nth-child(5) {
+  background-color: #9370db; /* Purple */
+}
+.button-panel {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.button-panel button {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+.button-panel button:hover {
+  transform: scale(1.1); 
+}
+#nounBtn {
+  background-color: #ff6347;
+}
+#verbBtn {
+  background-color: #00ced1;
+}
+#adjectiveBtn {
+  background-color: #32cd32;
+}
+#secondNounBtn {
+  background-color: #ffa500;
+}
+#placeBtn {
+  background-color: #9370db;
+}
+#speakBtn {
+  background-color: #ff4500;
+}
+#randomStoryBtn {
+  background-color: #4682b4;
+}
+
+.story {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  background-color: #fafafa;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}

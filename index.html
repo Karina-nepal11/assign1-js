@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+  <link rel="stylesheet" href=" css/normalize.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Left Section: Word Display -->
+    <div class="word-columns">
+      <div class="word-column">
+        <div>Noun: <span id="noun"></span></div>
+        <div>Verb: <span id="verb"></span></div>
+        <div>Adjective: <span id="adjective"></span></div>
+        <div>Second Noun: <span id="secondNoun"></span></div>
+        <div>Place: <span id="place"></span></div>
+      </div>
+    </div>
+
+    <!-- Right Section: Buttons -->
+    <div class="button-panel">
+      <button id="nounBtn">Noun</button>
+      <button id="verbBtn">Verb</button>
+      <button id="adjectiveBtn">Adj</button>
+      <button id="secondNounBtn">Noun 2</button>
+      <button id="placeBtn">Place</button>
+      <button id="speakBtn">Speak</button>
+      <button id="randomStoryBtn">Reset</button>
+    </div>
+  </div>
+
+  <div class="story" id="story"></div>
+
+  <!-- Link to external JS file -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
